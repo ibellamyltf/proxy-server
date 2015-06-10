@@ -9,6 +9,6 @@ object Server extends App {
       Future.value(new DefaultHttpResponse(
         req.getProtocolVersion, HttpResponseStatus.OK))
   }
-  val server = Http.serve(":8080", service)
+  val server = Http.serve(":8081", service)
   Await.ready(server)
 }
